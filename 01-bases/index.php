@@ -43,37 +43,58 @@ var_dump($mina);
 <h1>Ma première voiture est de marque : <?= $car1->mark; ?></h1>
 <p>Elle peut faire <?= $car1->klaxon();?></p>
 
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
-<h2>La jauge d'essence est maintenant à <?= $car1->rouler(); ?> litres.</h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+<h2><?= $car1->rouler(); ?></h2>
+
+
+<?php 
+    require __DIR__.'/Rectangle.php';
+
+    $r = new Rectangle(10, 20);
+    echo $r->perimeter(); // 60
+    var_dump($r->isValid()); // true
+    $r2 = new Rectangle(-10, 20);
+    var_dump($r2->isValid()); // false
+
+    require __DIR__.'/Square.php';
+    $s = new Square(10);
+    echo $s->perimeter(); // 100
+    var_dump($s->isBiggerThen($r)); // false et utilisable sur les carrés ou rectangles
+?>
+
+<?php 
+    require __DIR__.'/Calculator.php';
+    $c = new Calculator();
+    $c->add(10)->substract(4);
+    $c->multiply(2)->divide(4);
+    echo $c->result(); // 3
+?>
+
+
 
 
 
