@@ -1,0 +1,15 @@
+{
+    "name": "administrateur/06-mvc",
+    "autoload": {
+        "psr-4": {
+            "Administrateur\\06Mvc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yasser Cherif",
+            "email": "yasserom@live.fr"
+        }
+    ],
+    "require": {}
+}
